@@ -1,0 +1,716 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*======= General style ===== */
+html {
+  font-size: 16px;
+  font-family:'Open Sans', sans-serif;
+  background-color:	#F8F8F8;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #00BFFF;
+}
+
+h1 {
+ font-size: 2.125rem;
+ color: #000;
+}
+
+
+h3 {
+  font-size: 1rem;
+  color: #383838;
+}
+
+
+p {
+  font-size: 0.7rem;
+  color: #A8A8A8;
+}
+
+.info-dskt {
+  display: none;
+
+}
+
+.hero-btn{
+  background-color: #4A4A4A;
+  border: none;
+  color: white;
+  font-weight: 700;
+  line-height: 2.5;
+  text-align: center;
+  box-shadow: 2px 2px 0px #DADADA;
+  height: 2.5em;
+  width: 85%;
+  display: block;
+  margin-left: 1.1rem;
+
+
+}
+ /*======= Header styles for mobile ======*/
+header {
+  width: 100%;
+}
+
+.logo-text, .nav-text {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+.nav-content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.logo, .nav-img {
+  padding-right: 4rem;
+}
+
+
+/*======== Hero styles for mobile======*/
+.hero {
+  padding-bottom: 2rem;
+}
+.hero, .hero-img{
+  width: 100%;
+  background-color: #D3D3D3;
+}
+
+.hero-head,
+.hero-content {
+  width: 90%;
+  padding: 1rem;
+}
+
+.hero-content {
+  font-size: 1.3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #383838;
+}
+
+/*======= informtion styles for mobile=====*/
+.info {
+  margin-top: 1rem;
+}
+.info-content {
+  display: none;
+}
+
+.info-item {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+
+/*======== portfolio styles for mobile =======*/
+
+.portfolio-img,
+.portfolio-text,
+.portfolio-text1{
+  display: none;
+}
+
+.portfolio{
+  margin-top: 2rem;
+}
+
+.portfolio-item {
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #D3D3D3;
+}
+
+.portfolio h2 {
+  margin-left: 4.5rem;
+}
+
+
+/*========== Thesis styles mobile ===*/
+
+.exibits-main-content {
+  margin-bottom: 1.5rem;
+}
+.exibits-header {
+  margin-left: 4.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.exibits-video {
+  width: 100%;
+}
+.exibits-side,
+.exibits-comment {
+  display: none;
+}
+
+
+/*====== Footer styles mobile ===*/
+.copyright-extra {
+  display: none;
+}
+.copyright {
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 960px) {
+    /* Style adjustments for viewports that meet the condition */
+
+
+/*======= General styles desktop ===*/
+
+
+.info-mbl {
+  display: none;
+}
+
+.info-dskt{
+  display: block;
+}
+
+/*======= Header styles desktop ======*/
+
+.logo-text,
+.nav-text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.logo {
+  width: 50%;
+}
+.logo-text {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.logo-img {
+  height: 5rem;
+}
+
+span {
+  color:  #D3D3D3;
+}
+
+.nav-content {
+  width: 50%;
+  margin-top: 2rem;
+}
+.nav-text {
+  color: black;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+
+}
+.nav-img {
+  display: none;
+}
+/*======= Hero styles desktop ====*/
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+
+.hero-img{
+  width: 60%;
+  height: 400px;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.hero-mention{
+  width: 40%;
+  margin-left: 1.5rem;
+}
+
+/*========= Information styles desktop =====*/
+
+.info {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-img {
+  width: 100%;
+}
+
+.info-text {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-citation {
+  font-size: 1rem;
+}
+
+.info-citation2 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.info-content {
+  display: block;
+  width: 60%;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.info-item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.info-items{
+  width: 40%;
+  margin-top: 0;
+}
+
+.inform {
+  margin-left: 2rem;
+}
+
+.inform h3 {
+  font-size: 1.2rem;
+}
+
+.inform p, a {
+  font-size: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.info-item:last-of-type {
+  background-color: #D3D3D3;
+}
+
+.info-dskt{
+  width: 35%;
+  margin: 1rem;
+}
+.info-item {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.info-mbl{
+  display: none;
+}
+
+/*===== Portfolio styles Desktop ====*/
+.portfolio {
+  width: 100%;
+  background-color: #D3D3D3;
+}
+
+.portfolio-header {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.portfolio-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%
+  grid-template-columns: 30% 30% 30%;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  margin-left: 3rem;
+}
+
+.portfolio-img,
+.portfolio-text {
+  display: block;
+}
+
+.portfolio-img {
+  width: 100%;
+  margin: 0;
+}
+
+.portfolio-item {
+  background-color: #FFFFFF;
+  margin-right: 0;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+.portfolio-head,
+.portfolio-text,
+.portfolio-text1 {
+  margin-left: 1rem;
+  margin-top: 1rem
+}
+
+.portfolio-text {
+  margin-bottom: 0.5rem;
+}
+
+/*========== Thesis styles desktop ===*/
+.exibits-side,
+.exibits-comment {
+  display: block;
+}
+.exibits-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.exibits-main-content{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.exibits-main {
+  width: 60%;
+}
+
+.exibits-comment {
+  margin-left: 1.5rem;
+}
+
+.exibits-side {
+  width: 40%;
+}
+
+.exibits-side-content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.exibits-img {
+  margin: 1rem;
+}
+
+.exibits-side-content:first-of-type {
+  background-color: #D3D3D3;
+}
+
+.exibits-side-text {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.exibits-head {
+  font-size: 1.4rem;
+}
+
+/*======== Footer styles desktop  =========*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: 1px solid #D3D3D3;
+  margin-bottom: 3rem;
+}
+.copyright-extra {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.copyright-extra a {
+  font-size: 0.7rem;
+  color: #A8A8A8;
+}
+
+}
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
